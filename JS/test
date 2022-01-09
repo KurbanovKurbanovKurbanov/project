@@ -1,0 +1,19 @@
+const number0fFilms = +prompt('сколько фильмов вы уже посмотрели?', '');
+const personalMoveDB = {
+    count: number0fFilms,
+    movies: {},
+    actors: {},
+    genres: {},
+    privat: false
+
+};
+
+const a = prompt('Один из просмотренных фильмов?', ''),
+      b = prompt('на  сколько оцените его?', ''),
+      c = prompt('Один из просмотренных фильмов?', ''),
+      d= prompt('на  сколько оцените его?', '');
+
+      personalMoveDB.movies[a] = b;
+      personalMoveDB.movies[c] = d;
+
+      console.log(personalMoveDB);
